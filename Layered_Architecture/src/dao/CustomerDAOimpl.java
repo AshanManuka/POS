@@ -40,6 +40,7 @@ public class CustomerDAOimpl {
         return pstm.executeUpdate() > 0;
     }
 
+    //Delete customer has an error
     public boolean deleteCustomer(String  id) throws SQLException, ClassNotFoundException {
         String name=id;
         Connection connection = DBConnection.getDbConnection().getConnection();
